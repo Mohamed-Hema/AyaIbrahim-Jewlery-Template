@@ -1,3 +1,9 @@
+//On Scroll Animation
+AOS.init({
+  duration: 1200,
+})
+
+// Global consts
 const navBar = document.querySelector('.navbar');
 
 window.onscroll = function () {

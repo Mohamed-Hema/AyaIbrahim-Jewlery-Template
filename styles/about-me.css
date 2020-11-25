@@ -1,5 +1,5 @@
 /* Start Global Styles */
-@import url('../styles/main.css');
+@import url('../styles/main-min.css');
 body{
     overflow-x: hidden;
 }

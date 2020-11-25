@@ -1,3 +1,8 @@
+//On Scroll Animation
+AOS.init({
+    duration: 1200,
+  })
+// Global consts
 const zoomBtn = document.querySelectorAll('.zoom-text');
 const allImages = document.querySelectorAll('.img-container');
 const imageView = document.querySelector('.image-view');
