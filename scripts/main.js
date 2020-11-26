@@ -47,3 +47,19 @@ $(document).ready(function(){
         }   
     });
 });
+
+// $(window).on("load", function() {
+//   $(".wrapper").fadeOut("slow");
+// })
+
+$(window).on('load',function (){
+  // Loading itSelf!
+  $(".overlay .sk-folding-cube").fadeOut(2000,function (){
+    // Show Scroll!
+    $(".stop-scrolling");
+    $(this).parent().fadeOut(2000,function (){
+      // Remove the whole loading
+      $(this).remove();
+    });
+  });
+});
