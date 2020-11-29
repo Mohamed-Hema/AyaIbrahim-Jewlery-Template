@@ -2,6 +2,14 @@
 AOS.init({
     duration: 1200,
   })
+// Loading Screen
+let loading = document.querySelector('.loading');
+let body = document.getElementsByTagName('body')[0];
+body.style.overflowY = "hidden";
+window.addEventListener('load', function () {
+  loading.style.display ='none';
+  body.style.overflowY = "scroll";
+});
 // Global consts
 const zoomBtn = document.querySelectorAll('.zoom-text');
 const allImages = document.querySelectorAll('.img-container');

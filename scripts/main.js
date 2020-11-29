@@ -2,7 +2,14 @@
 AOS.init({
   duration: 1200,
 })
-
+// Loading Screen
+let loading = document.querySelector('.loading');
+let body = document.getElementsByTagName('body')[0];
+body.style.overflowY = "hidden";
+window.addEventListener('load', function () {
+  loading.style.display ='none';
+  body.style.overflowY = "scroll";
+});
 // Global consts
 const navBar = document.querySelector('.navbar');
 
@@ -48,18 +55,4 @@ $(document).ready(function(){
     });
 });
 
-// $(window).on("load", function() {
-//   $(".wrapper").fadeOut("slow");
-// })
 
-$(window).on('load',function (){
-  // Loading itSelf!
-  $(".overlay .sk-folding-cube").fadeOut(2000,function (){
-    // Show Scroll!
-    $(".stop-scrolling");
-    $(this).parent().fadeOut(2000,function (){
-      // Remove the whole loading
-      $(this).remove();
-    });
-  });
-});
