@@ -8,6 +8,14 @@ AOS.init({
   duration: 1200,
 })
 
+
+// Loading Screen
+body.style.overflowY = "hidden";
+window.addEventListener('load', function () {
+  loading.style.display ='none';
+  body.style.overflowY = "scroll";
+});
+
 // Global consts
 window.onscroll = function () {
   let top = window.scrollY;
